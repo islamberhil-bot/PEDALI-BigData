@@ -1,0 +1,10 @@
+.venv
+.git
+downloads
+results
+notebooks
+data
+__pycache__
+*.ipynb
+*.log
+.env

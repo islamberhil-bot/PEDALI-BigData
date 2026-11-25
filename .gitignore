@@ -1,0 +1,34 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Trash-*/
+downloads/
+*.log
+.env
+.env.*
+!.env.example
+data/bronze/
+data/silver/
+data/gold/
+results/*.png
+.DS_Store
+
+# Notebooks temporaires et copies
+/Untitled.ipynb
+/Untitled1.ipynb
+/02_spark_session_distribuee.ipynb
+/03_analyse_rdd.ipynb
+/04_analyse_dataframe_sql.ipynb
+
+# Anciennes configurations Docker
+/compose.spark.backup.yml
+/compose.spark.validated.yml
+/compose.spark.yml
+/docker-compose.before-kafka-fix.yml
+/docker-compose.original.yml
+
+# Fichiers temporaires
+.Trash-0/
+.ipynb_checkpoints/
+*.pyc

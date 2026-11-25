@@ -1,0 +1,18 @@
+FROM pedali-spark:3.5.3
+
+ENV PIP_DEFAULT_TIMEOUT=180
+ENV PIP_RETRIES=10
+
+RUN python3 -m pip install \
+    --timeout 180 \
+    --retries 10 \
+    jupyterlab==4.4.10 \
+    ipykernel
+
+WORKDIR /workspace
+
+EXPOSE 8888
+
+ENTRYPOINT ["python3", "-m", "jupyterlab"]
+
+CMD ["--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
